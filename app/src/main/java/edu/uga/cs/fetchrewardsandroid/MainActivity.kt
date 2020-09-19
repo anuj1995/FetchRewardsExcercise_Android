@@ -1,8 +1,8 @@
 package edu.uga.cs.fetchrewardsandroid
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ExpandableListView
+import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import edu.uga.cs.fetchrewardsexcercise.ViewModels.HiringInfoViewModel
