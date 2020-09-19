@@ -37,6 +37,7 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
     testImplementation "android.arch.core:core-testing:1.1.1"
+    debugImplementation "org.mockito:mockito-android:3.2.4"
     androidTestImplementation "android.arch.core:core-testing:1.1.1"
 
     //rx android
