@@ -1,6 +1,6 @@
-package edu.uga.cs.fetchrewardsexcercise.HiringApiInterface
+package edu.uga.cs.fetchrewardsandroid.hiring_api_Interface
 
-import edu.uga.cs.fetchrewardsexcercise.DataModels.HiringInfo
+import edu.uga.cs.fetchrewardsandroid.data_models.HiringInfo
 import io.reactivex.Observable
 import retrofit2.http.GET
 

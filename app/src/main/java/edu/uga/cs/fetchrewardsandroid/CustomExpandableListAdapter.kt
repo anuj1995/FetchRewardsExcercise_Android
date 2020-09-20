@@ -7,7 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.BaseExpandableListAdapter
 import android.widget.TextView
-import edu.uga.cs.fetchrewardsexcercise.DataModels.HiringInfo
+import edu.uga.cs.fetchrewardsandroid.data_models.HiringInfo
 
 class CustomExpandableListAdapter(var context:Context, var listTitles: List<Int>, val listDetails:
     Map<Int, List<HiringInfo>>): BaseExpandableListAdapter() {

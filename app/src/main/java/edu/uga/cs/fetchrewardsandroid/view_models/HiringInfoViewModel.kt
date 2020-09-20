@@ -1,24 +1,25 @@
-package edu.uga.cs.fetchrewardsexcercise.ViewModels
+package edu.uga.cs.fetchrewardsandroid.view_models
 
 import android.util.Log
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import edu.uga.cs.fetchrewardsandroid.KoinDependencyInjection.getDIInstance
-import edu.uga.cs.fetchrewardsandroid.view_models.AlphanumComparator
-import edu.uga.cs.fetchrewardsexcercise.DataModels.HiringInfo
-import edu.uga.cs.fetchrewardsexcercise.HiringApiInterface.HiringApi
+import edu.uga.cs.fetchrewardsandroid.data_models.HiringInfo
+import edu.uga.cs.fetchrewardsandroid.hiring_api_Interface.HiringApi
+import edu.uga.cs.fetchrewardsandroid.koin_dependency_injection.getDIInstance
 import io.reactivex.BackpressureStrategy
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.rxkotlin.addTo
 import io.reactivex.rxkotlin.subscribeBy
 import io.reactivex.schedulers.Schedulers
+import org.jetbrains.annotations.TestOnly
 
 class HiringInfoViewModel():ViewModel() {
 
     private val hiringInfoData: MutableLiveData<Map<Int, List<HiringInfo>>> = MutableLiveData()
-    private lateinit var hiringApi:HiringApi
+    private lateinit var hiringApi: HiringApi
 
+    @TestOnly
     constructor(hiringApi: HiringApi) : this() {
         this.hiringApi = hiringApi
     }

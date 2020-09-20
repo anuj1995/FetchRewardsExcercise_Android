@@ -5,7 +5,8 @@ import android.widget.ExpandableListView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
-import edu.uga.cs.fetchrewardsexcercise.ViewModels.HiringInfoViewModel
+import edu.uga.cs.fetchrewardsandroid.view_models.HiringInfoViewModel
+
 
 class MainActivity : AppCompatActivity() {
 
@@ -16,7 +17,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        expandableListView =  findViewById(R.id.expandableListView)
+        expandableListView = findViewById(R.id.expandableListView)
         val viewModel = ViewModelProvider(this).get(HiringInfoViewModel::class.java)
         viewModel.fetchData()
         viewModel.getHiringInfoData().observe(this, Observer {

@@ -2,7 +2,7 @@ package edu.uga.cs.fetchrewardsandroid.view_models;
 
 import java.util.Comparator;
 
-import edu.uga.cs.fetchrewardsexcercise.DataModels.HiringInfo;
+import edu.uga.cs.fetchrewardsandroid.data_models.HiringInfo;
 
 
 public class AlphanumComparator implements Comparator<HiringInfo>

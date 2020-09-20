@@ -2,12 +2,11 @@ package edu.uga.cs.fetchrewardsandroid.view_models
 
 import android.app.Application
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule
-import com.nhaarman.mockito_kotlin.whenever
-import edu.uga.cs.fetchrewardsandroid.KoinDependencyInjection.getNetworkModule
-import edu.uga.cs.fetchrewardsexcercise.DataModels.HiringInfo
-import edu.uga.cs.fetchrewardsexcercise.HiringApiInterface.HiringApi
+import com.nhaarman.mockitokotlin2.whenever
+import edu.uga.cs.fetchrewardsandroid.data_models.HiringInfo
+import edu.uga.cs.fetchrewardsandroid.hiring_api_Interface.HiringApi
+import edu.uga.cs.fetchrewardsandroid.koin_dependency_injection.getNetworkModule
 import edu.uga.cs.fetchrewardsexcercise.RxImmediateSchedulerRule
-import edu.uga.cs.fetchrewardsexcercise.ViewModels.HiringInfoViewModel
 import io.reactivex.Observable
 import org.junit.*
 import org.koin.android.ext.koin.androidContext
@@ -28,7 +27,7 @@ class HiringInfoViewModelTest: KoinTest {
     val ruleForLivaData = InstantTaskExecutorRule()
 
     @Mock
-    lateinit var mockHiringApi:HiringApi
+    lateinit var mockHiringApi: HiringApi
 
     @Mock
     private lateinit var context: Application
