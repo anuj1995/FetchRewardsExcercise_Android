@@ -33,5 +33,10 @@ The below diagram depicts the flow of data and gives insights on the architectur
 You can get the code snipets along with its usage guide in the wiki link provided below.
 [Wiki Link](https://github.com/anuj1995/FetchRewardsExercise_Android/wiki)
 
+### Appication demo
+
+<p align="center">
+  <img  width="250" height="500" src="https://github.com/anuj1995/FetchRewardsExercise_Android/blob/master/images/ezgif.com-video-to-gif.gif">
+</p>
 
 
