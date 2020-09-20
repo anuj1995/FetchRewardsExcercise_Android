@@ -25,7 +25,10 @@ These are things you need to know or have before you start working with is proje
 I have implemented the application using a MVVM architechute which helps me separate the data layer, business logic layer and UI.
 There are various benifits of using such an architecture as it helps build clean, maintable and resulable code.
 The below diagram depicts the flow of data and gives insights on the architecture.
-	![Application data flow](image.jpg)
+
+<p align="center">
+  <img width="500" height="200" src="https://github.com/anuj1995/FetchRewardsExercise_Android/blob/master/images/ArchitectureDiagram.png">
+</p>
 
 
 
