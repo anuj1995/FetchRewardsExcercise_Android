@@ -1,9 +1,9 @@
-package edu.uga.cs.fetchrewardsandroid.KoinDependencyInjection
+package edu.uga.cs.fetchrewardsandroid.koin_dependency_injection
 
 import android.content.Context
 import com.google.gson.Gson
 import com.google.gson.GsonBuilder
-import edu.uga.cs.fetchrewardsexcercise.HiringApiInterface.HiringApi
+import edu.uga.cs.fetchrewardsandroid.hiring_api_Interface.HiringApi
 import okhttp3.Cache
 import okhttp3.OkHttpClient
 import org.koin.android.ext.koin.androidContext
